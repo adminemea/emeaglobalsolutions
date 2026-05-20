@@ -57,14 +57,10 @@ export default function HomePage() {
       {/* ═══ HERO ═══ */}
       <section className={styles.hero} id="hero">
         <div className={styles.hero__bg}>
-          <div className={styles['hero__wave-ring']} />
-          <div className={styles['hero__wave-ring']} />
-          <div className={styles['hero__wave-ring']} />
-          <div className={styles['hero__wave-ring']} />
-          <div className={styles['hero__wave-ring']} />
-          <div className={styles['hero__wave-ring']} />
-          <div className={styles['hero__wave-ring']} />
-          <div className={styles['hero__wave-ring']} />
+          <div className={styles.hero__drop} />
+          {[...Array(5)].map((_, i) => (
+            <div key={i} className={styles['hero__wave-ring']} />
+          ))}
         </div>
         <div className={styles.hero__content}>
           <ScrollReveal className="reveal">

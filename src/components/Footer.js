@@ -38,7 +38,7 @@ export default function Footer() {
           <h4 className={styles.footer__heading}>Services</h4>
           <Link href="/services/engineering" className={styles.footer__link}>Engineering & Design</Link>
           <Link href="/services/manufacturing" className={styles.footer__link}>Manufacturing</Link>
-          <Link href="/services/digital" className={styles.footer__link}>Digital & Industry 4.0</Link>
+          <Link href="/services/digital-ai" className={styles.footer__link}>Digital & Industry 4.0</Link>
           <Link href="/services/consulting" className={styles.footer__link}>Consulting</Link>
           <Link href="/services" className={styles.footer__link}>All Services</Link>
         </div>

@@ -8,7 +8,7 @@ import styles from './Navbar.module.css';
 const serviceDropdown = [
   { label: 'Engineering & Design', href: '/services/engineering', color: 'var(--div-engineering)' },
   { label: 'Manufacturing', href: '/services/manufacturing', color: 'var(--div-manufacturing)' },
-  { label: 'Digital & Industry 4.0', href: '/services/digital', color: 'var(--div-digital)' },
+  { label: 'Digital & Industry 4.0', href: '/services/digital-ai', color: 'var(--div-digital)' },
   { label: 'Consulting', href: '/services/consulting', color: 'var(--div-consulting)' },
 ];
 
