@@ -14,7 +14,7 @@ export default function ContactPage() {
     e.preventDefault();
     setStatus('sending');
 
-    const formUrl = process.env.NEXT_PUBLIC_CONTACT_FORM_URL || 'https://script.google.com/macros/s/AKfycbyMsVapnej37Sd0DRsN9uXpBkIOCyCUzNVv_yUtrhNlsCwTmaZV9BIjfOaQNVuvZ3P0Qw/exec';
+    const formUrl = process.env.NEXT_PUBLIC_CONTACT_FORM_URL || 'https://script.google.com/macros/s/AKfycbz5IlCT9tpOWF7gEsObOP3IjO44C4rjCWIdAql6nYb0L8byncqa74j1Gp-zbEO9O_tRkQ/exec';
 
     const formData = new URLSearchParams();
     Object.keys(form).forEach((key) => {
