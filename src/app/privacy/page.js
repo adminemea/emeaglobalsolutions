@@ -1,8 +1,12 @@
 import ScrollReveal from '@/components/ScrollReveal';
+import ObfuscatedEmail from '@/components/ObfuscatedEmail';
 
 export const metadata = {
   title: 'Privacy Policy',
   description: 'EMEA Global Services privacy policy — how we collect, use, and protect your data.',
+  alternates: {
+    canonical: '/privacy',
+  },
 };
 
 export default function PrivacyPage() {
@@ -12,8 +16,8 @@ export default function PrivacyPage() {
     { title: 'Data Security', content: 'We implement appropriate technical and organisational measures to protect your personal data against unauthorised access, alteration, disclosure, or destruction. Our data handling practices comply with applicable data protection regulations including GDPR where relevant.' },
     { title: 'Cookies', content: 'Our website may use cookies and similar technologies to enhance your browsing experience, analyse site traffic, and understand where our visitors are coming from. You can control cookie settings through your browser preferences.' },
     { title: 'Third-Party Services', content: 'We may use third-party services for analytics, form processing, and communication tools. These services may collect information sent by your browser as part of their standard operations. Each third-party service has its own privacy policy governing the use of your information.' },
-    { title: 'Your Rights', content: 'You have the right to access, correct, or delete your personal data that we hold. You may also object to or restrict certain processing of your data. To exercise these rights, please contact us at info@emeaglobalsolutions.com.' },
-    { title: 'Contact Us', content: 'If you have any questions about this Privacy Policy or our data practices, please contact us at info@emeaglobalsolutions.com or call +91 99727 72682.' },
+    { title: 'Your Rights', content: <>You have the right to access, correct, or delete your personal data that we hold. You may also object to or restrict certain processing of your data. To exercise these rights, please contact us at <ObfuscatedEmail />.</> },
+    { title: 'Contact Us', content: <>If you have any questions about this Privacy Policy or our data practices, please contact us at <ObfuscatedEmail /> or call +91 99727 72682.</> },
   ];
 
   return (

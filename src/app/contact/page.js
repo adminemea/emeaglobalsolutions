@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Mail, Phone, MapPin, ArrowRight, ChevronDown, Send, Clock } from 'lucide-react';
 import ScrollReveal from '@/components/ScrollReveal';
+import ObfuscatedEmail from '@/components/ObfuscatedEmail';
 import styles from './contact.module.css';
 
 export default function ContactPage() {
@@ -89,9 +90,7 @@ export default function ContactPage() {
                   <div className={styles.info__icon}><Mail size={20} /></div>
                   <h3 className={styles.info__title}>Email Us</h3>
                   <p className={styles.info__desc}>Feel free to email us for any enquiries or project discussions.</p>
-                  <a href="mailto:info@emeaglobalsolutions.com" className={styles.info__link}>
-                    info@emeaglobalsolutions.com
-                  </a>
+                  <ObfuscatedEmail className={styles.info__link} />
                 </div>
               </ScrollReveal>
 

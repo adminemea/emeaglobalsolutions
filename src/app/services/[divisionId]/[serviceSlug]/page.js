@@ -20,6 +20,9 @@ export async function generateMetadata({ params }) {
     title: `${result.title} | EMEA Global Services`,
     description: result.intro,
     keywords: result.seoKeywords,
+    alternates: {
+      canonical: `/services/${divisionId}/${serviceSlug}`,
+    },
   };
 }
 
@@ -36,6 +39,7 @@ export default async function ServiceDetailPage({ params }) {
     provider: {
       '@type': 'Organization',
       name: 'EMEA Global Services',
+      '@id': 'https://emeaglobalsolutions.com/#organization',
     },
     areaServed: {
       '@type': 'Country',

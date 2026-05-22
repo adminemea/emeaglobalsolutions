@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import { prefixPath } from '@/lib/utils';
+import ObfuscatedEmail from '@/components/ObfuscatedEmail';
 import styles from './Footer.module.css';
 
 export default function Footer() {
@@ -22,7 +23,7 @@ export default function Footer() {
           </p>
           <div className={styles['footer__contact-row']}>
             <Mail size={14} />
-            <a href="mailto:info@emeaglobalsolutions.com">info@emeaglobalsolutions.com</a>
+            <ObfuscatedEmail />
           </div>
           <div className={styles['footer__contact-row']}>
             <Phone size={14} />

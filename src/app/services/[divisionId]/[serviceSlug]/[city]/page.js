@@ -26,6 +26,9 @@ export async function generateMetadata({ params }) {
     title: `${result.title} in ${cityData.name} | EMEA Global Services`,
     description: `Leading ${result.title} provider in ${cityData.name}. ${result.intro}`,
     keywords: `${result.seoKeywords}, ${result.title.toLowerCase()} ${cityData.name}, engineering in ${cityData.name}`,
+    alternates: {
+      canonical: `/services/${divisionId}/${serviceSlug}/${city}`,
+    },
   };
 }
 
@@ -45,6 +48,7 @@ export default async function ServiceCityPage({ params }) {
     provider: {
       '@type': 'Organization',
       name: 'EMEA Global Services',
+      '@id': 'https://emeaglobalsolutions.com/#organization',
     },
     areaServed: {
       '@type': 'City',

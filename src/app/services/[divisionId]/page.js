@@ -13,6 +13,9 @@ export async function generateMetadata({ params }) {
   return {
     title: `${division.title} Services`,
     description: division.intro,
+    alternates: {
+      canonical: `/services/${divisionId}`,
+    },
   };
 }
 

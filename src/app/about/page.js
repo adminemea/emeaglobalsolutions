@@ -1,8 +1,15 @@
-'use client';
 import Link from 'next/link';
 import { ArrowRight, Globe, Shield, Target, Users, Award, Heart, Zap, MapPin, Calendar, Briefcase } from 'lucide-react';
 import ScrollReveal from '@/components/ScrollReveal';
 import styles from './about.module.css';
+
+export const metadata = {
+  title: 'About Us',
+  description: 'Learn about EMEA Global Services, our mission, vision, core values, and the leadership team driving our engineering excellence.',
+  alternates: {
+    canonical: '/about',
+  },
+};
 
 export default function AboutPage() {
   const team = [

@@ -1,11 +1,15 @@
 import Link from 'next/link';
 import { ArrowRight, MapPin, Briefcase, Building } from 'lucide-react';
 import ScrollReveal from '@/components/ScrollReveal';
+import ObfuscatedEmail from '@/components/ObfuscatedEmail';
 import styles from './careers.module.css';
 
 export const metadata = {
   title: 'Careers - EMEA Global Services',
   description: 'Join EMEA Global Services. Explore our current job openings for engineering, manufacturing, and digital transformation professionals.',
+  alternates: {
+    canonical: '/careers',
+  },
 };
 
 export default function CareersPage() {
@@ -104,11 +108,16 @@ export default function CareersPage() {
                     </div>
                     <p className={styles.job__desc}>{job.desc}</p>
                   </div>
-                  <a href={`mailto:info@emeaglobalsolutions.com?subject=${encodeURIComponent(`Job Application: ${job.title}`)}`} className={`btn btn--secondary btn--sm ${styles.apply__btn}`}>
-                    <span className={styles['apply__btn-desktop']}>info@emeaglobalsolutions.com</span>
+                  <ObfuscatedEmail
+                    subject={`Job Application: ${job.title}`}
+                    className={`btn btn--secondary btn--sm ${styles.apply__btn}`}
+                  >
+                    <span className={styles['apply__btn-desktop']}>
+                      <ObfuscatedEmail asSpan />
+                    </span>
                     <span className={styles['apply__btn-mobile']}>Apply Now</span>
                     <ArrowRight size={16} />
-                  </a>
+                  </ObfuscatedEmail>
                 </div>
               </ScrollReveal>
             ))}

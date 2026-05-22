@@ -1,9 +1,16 @@
-'use client';
 import Link from 'next/link';
 import { ArrowRight, Compass, Factory, Cpu, TrendingUp } from 'lucide-react';
 import ScrollReveal from '@/components/ScrollReveal';
 import { divisions } from '@/data/services';
 import styles from './services.module.css';
+
+export const metadata = {
+  title: 'Our Services',
+  description: 'Explore the B2B engineering and manufacturing services offered by EMEA Global Services across four key divisions.',
+  alternates: {
+    canonical: '/services',
+  },
+};
 
 const iconMap = { Compass, Factory, Cpu, TrendingUp };
 

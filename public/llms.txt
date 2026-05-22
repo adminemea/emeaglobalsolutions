@@ -1,0 +1,71 @@
+# EMEA Global Services - AI-Friendly Site Structure & Capabilities
+
+EMEA Global Services is a professional B2B engineering, manufacturing automation, digital transformation, and industrial consulting firm based in Indiranagar, Bengaluru, India, serving tier-1 manufacturing, aerospace, heavy engineering, energy, and process industries globally.
+
+## Contact Information
+- **Official Website:** [https://emeaglobalsolutions.com](https://emeaglobalsolutions.com)
+- **Email:** info@emeaglobalsolutions.com
+- **Phone:** +91 99727 72682
+- **Address:** #235, 13th Cross, 2nd Stage, Indiranagar, Bangalore, India - 560038
+
+---
+
+## Core Capabilities & Divisions
+
+### 1. Engineering Services
+- **New Product Engineering:** End-to-end product design, feasibility study, 3D CAD modeling, DFM/DFA, prototyping, and compliance validation.
+- **Reverse Engineering:** Legacy equipment digitization, 3D laser scanning, parametric reconstruction, and metallurgical analysis.
+- **Value Engineering:** Strategic product cost optimization, material substitution, design simplification, and supplier cost benchmarking.
+- **FEED & P&ID Design:** Front-End Engineering Design, PFD and P&ID drafting, equipment sizing, and control philosophy alignment to ASME, API, and ISO standards.
+- **Skid-Mounted & Modular Process Systems:** Integrated piping, structural skid design, pipe stress analysis, 3D modeling, and clash detection.
+- **Oil & Gas Downstream Engineering:** Refinery engineering, brownfield modifications, equipment rerating, pipeline stress analysis, and asset integrity.
+- **Advanced FEA & CFD Simulation:** Performance validation, structural stress, thermal heat transfer, vibration, dynamic, and fluid flow simulations.
+- **Industrial Performance Optimization:** Data-driven operational assessments, constraint removal, system diagnostics, and energy efficiency.
+- **CAD Drafting & 3D Modeling:** High-precision 2D detailing, 3D parametric assembly modeling, GD&T application, and BOM generation.
+- **CAD Migration & Standardization:** Securing platform transitions, PDM/PLM data audits, template/library standardization, and CAD governance.
+
+### 2. Manufacturing Services
+- **Fixture Design:** Precision mechanical, pneumatic, and hydraulic fixtures for welding, machining, and assembly lines.
+- **Tooling & Die Design:** Dies, molds, jigs, gauges, and machining tools optimized for high-volume manufacturing.
+- **Custom Machine Design & Automation:** Turnkey custom machine building, electrical control panel design, PLC/HMI programming, and commission-ready FAT/SAT systems.
+- **Assembly Line Automation & Robotics:** Semi-automated and robotic assembly cells, conveyor integrations, vision-guided inspection, and cycle time tuning.
+- **Production Optimization:** OEE evaluation, manufacturing cycle time reduction, factory layout optimization, and throughput diagnostics.
+- **Lean Manufacturing Consulting:** Process waste elimination using Value Stream Mapping (VSM), 5S, Kaizen workshops, TPM, and SMED.
+
+### 3. Digital & AI Services (Industry 4.0)
+- **Digital Twin Engineering:** Virtual replicas of plants and machinery synced with real-time IoT sensor telemetry and MES data.
+- **Virtual Commissioning:** Simulating robot cells and PLC logic inside virtual testing environments before physical floor deployment.
+- **Automation & Control Systems:** Industrial PLC, HMI, SCADA, and DCS system programming, IIoT edge integration, and field instrumentation.
+- **Robotics Integration:** Cobot and industrial robot arm cell designs, path planning, gripper/EOAT engineering, and safety validation.
+- **Industrial Data & AI Solutions:** Data lakes/pipelines, machine learning models for predictive maintenance, demand forecasting, and operations telemetry.
+- **AI Vision Inspection:** Computer vision defect detection, visual metrology, edge-deployed camera systems, and quality control automation.
+- **Decision Intelligence:** Autonomous optimization algorithms for scheduling, energy consumption, and supply chain logistics.
+
+### 4. Consulting & Transformation
+- **Engineering Consulting:** Technical due diligence, independent expert design review, capital project governance, and vendor selection.
+- **Plant Modernization Strategy:** Technology gap assessment, asset condition auditing, Capex budgeting, and phased upgrade roadmaps.
+- **Digital Transformation Consulting:** Industry 4.0 maturity assessment, automation roadmapping, data governance, and change management.
+- **Optimization & Value Engineering:** Productivity KPI framework alignment, Six Sigma project execution, and supply chain diagnostics.
+
+---
+
+## Directory Structure & URL Map
+
+All page structures follow a standard Next.js App Router routing layout.
+
+- **Homepage:** `/` - Company overview, primary divisions, and client validation.
+- **About Us:** `/about` - Leadership profile, founding history (2022, founded by Arjun & Santosh), B2B values, and core principles.
+- **Services Directory:** `/services` - Master index of all engineering, manufacturing, digital/AI, and consulting divisions.
+- **Careers:** `/careers` - Job listings for mechanical design, process, simulation, automation, and digital solution architects.
+- **Contact Page:** `/contact` - Form submissions, phone links, and support FAQs.
+- **Privacy Policy:** `/privacy` - Data collection policies, GDPR compliance declarations, and contact points.
+
+### Dynamic Service & Geo-Location Landing Pages
+To provide regional industrial context, service details are mapped dynamically by division, service slug, and city:
+- **Division Page:** `/services/[divisionId]`
+  - e.g., `/services/engineering`, `/services/manufacturing`, `/services/digital-ai`, `/services/consulting`
+- **Service Detail Page:** `/services/[divisionId]/[serviceSlug]`
+  - e.g., `/services/engineering/fea-cfd-simulation`
+- **City Landing Page:** `/services/[divisionId]/[serviceSlug]/[city]`
+  - Supported Cities (`[city]`): `bengaluru`, `chennai`, `pune`, `hyderabad`, `mumbai`, `delhi-ncr`, `dubai`, `abu-dhabi`, `saudi-arabia`, `europe`, `usa`, `australia`
+  - e.g., `/services/engineering/fea-cfd-simulation/bengaluru`

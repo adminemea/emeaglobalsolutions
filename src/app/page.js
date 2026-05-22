@@ -72,7 +72,7 @@ export default function HomePage() {
           <ScrollReveal className="reveal" delay={100}>
             <div className={styles['hero__logo-group']}>
               {/* <img src="/logo.png" alt="EMEA Global Logo" className={styles['hero__logo-image']} />  */}
-              <span className={styles['hero__brand-name']}>EMEA Global</span>
+              <h1 className={styles['hero__brand-name']}>EMEA Global</h1>
             </div>
           </ScrollReveal>
           <ScrollReveal className="reveal" delay={200}>
