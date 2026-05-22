@@ -7,6 +7,6 @@ export default function robots() {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://emeaglobalsolutions.com/sitemap.xml',
+    sitemap: 'https://www.emeaglobalsolutions.com/sitemap.xml',
   };
 }

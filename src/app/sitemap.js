@@ -4,7 +4,7 @@ import { cities } from '@/data/cities';
 export const dynamic = 'force-static';
 
 export default function sitemap() {
-  const baseUrl = 'https://emeaglobalsolutions.com';
+  const baseUrl = 'https://www.emeaglobalsolutions.com';
 
   // Static routes
   const staticRoutes = [
