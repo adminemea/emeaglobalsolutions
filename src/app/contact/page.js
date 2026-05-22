@@ -13,12 +13,32 @@ export default function ContactPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('sending');
-    // Email.js integration placeholder - to be configured
-    setTimeout(() => {
+
+    const formUrl = process.env.NEXT_PUBLIC_CONTACT_FORM_URL || 'https://script.google.com/macros/s/AKfycbws5wBXQH3JOO1t2AAJoYHsJJa7_R2laPmKwaOb3i77BNPuhEk2B-Dv6mhLJapTGf1f/exec';
+
+    const formData = new URLSearchParams();
+    Object.keys(form).forEach((key) => {
+      formData.append(key, form[key]);
+    });
+
+    try {
+      await fetch(formUrl, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: formData.toString(),
+      });
+
       setStatus('sent');
       setForm({ name: '', email: '', company: '', subject: '', message: '' });
       setTimeout(() => setStatus(''), 4000);
-    }, 1500);
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setStatus('error');
+      setTimeout(() => setStatus(''), 4000);
+    }
   };
 
   const faqs = [
@@ -138,7 +158,7 @@ export default function ContactPage() {
                     <textarea id="contact-message" className={styles.form__textarea} placeholder="Tell us about your project or requirements..." rows={5} value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} required />
                   </div>
                   <button type="submit" className={`btn btn--primary btn--lg ${styles.form__submit}`} disabled={status === 'sending'}>
-                    {status === 'sending' ? 'Sending...' : status === 'sent' ? 'Message Sent ✓' : <>Send Message <Send size={16} /></>}
+                    {status === 'sending' ? 'Sending...' : status === 'sent' ? 'Message Sent ✓' : status === 'error' ? 'Error. Try Again' : <>Send Message <Send size={16} /></>}
                   </button>
                 </form>
               </div>
