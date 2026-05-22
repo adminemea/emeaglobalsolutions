@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 import ConsentPopup from '@/components/ConsentPopup';
 
 export const metadata = {
-  metadataBase: new URL('https://emeaglobalsolutions.com'),
+  metadataBase: new URL('https://www.emeaglobalsolutions.com'),
   title: {
     default: 'EMEA Global Services | Engineering & Industrial Solutions',
     template: '%s | EMEA Global Services',
@@ -43,18 +43,18 @@ export default function RootLayout({ children }) {
   const orgSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    '@id': 'https://emeaglobalsolutions.com/#organization',
+    '@id': 'https://www.emeaglobalsolutions.com/#organization',
     name: 'EMEA Global Services',
     alternateName: ['EMEA Global Solutions', 'EMEA Global'],
     legalName: 'EMEA Global Services',
-    url: 'https://emeaglobalsolutions.com',
+    url: 'https://www.emeaglobalsolutions.com',
     logo: {
       '@type': 'ImageObject',
-      '@id': 'https://emeaglobalsolutions.com/#logo',
-      url: 'https://emeaglobalsolutions.com/logo.png',
+      '@id': 'https://www.emeaglobalsolutions.com/#logo',
+      url: 'https://www.emeaglobalsolutions.com/logo.png',
       caption: 'EMEA Global Services Logo'
     },
-    image: 'https://emeaglobalsolutions.com/logo.png',
+    image: 'https://www.emeaglobalsolutions.com/logo.png',
     description: 'Professional B2B engineering, manufacturing, and industrial automation services. Serving global clients in mechanical, aerospace, heavy manufacturing, energy, and oil & gas sectors from Indiranagar, Bengaluru, India.',
     contactPoint: {
       '@type': 'ContactPoint',

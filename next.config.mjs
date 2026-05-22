@@ -21,21 +21,6 @@ const nextConfig = {
         },
       ];
     },
-    async redirects() {
-      return [
-        {
-          source: '/:path*',
-          has: [
-            {
-              type: 'host',
-              value: 'www.emeaglobalsolutions.com',
-            },
-          ],
-          destination: 'https://emeaglobalsolutions.com/:path*',
-          permanent: true,
-        },
-      ];
-    },
   }),
 };
 

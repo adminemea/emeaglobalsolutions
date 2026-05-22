@@ -48,7 +48,7 @@ export default async function ServiceCityPage({ params }) {
     provider: {
       '@type': 'Organization',
       name: 'EMEA Global Services',
-      '@id': 'https://emeaglobalsolutions.com/#organization',
+      '@id': 'https://www.emeaglobalsolutions.com/#organization',
     },
     areaServed: {
       '@type': 'City',
