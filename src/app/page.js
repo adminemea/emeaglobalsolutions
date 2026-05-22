@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowUpRight, ChevronDown, Star, Zap, Compass, Factory, Cpu, TrendingUp, Settings, Target, BarChart3, Layers, Wrench, Globe, Shield, Clock, Rocket, Sparkles, Box, MessageSquare, Award } from 'lucide-react';
 import ScrollReveal from '@/components/ScrollReveal';
+import { prefixPath } from '@/lib/utils';
 import styles from './page.module.css';
 import { divisions } from '@/data/services';
 
@@ -193,7 +194,7 @@ export default function HomePage() {
                         {[0, 1, 2, 3, 4, 5, 6].map((num) => (
                           <Image
                             key={`${i}-${num}`}
-                            src={`/emeags/images/clients/client_${num}.png`}
+                            src={prefixPath(`/images/clients/client_${num}.png`)}
                             alt={`Client ${num}`}
                             className={styles['client-marquee__logo']}
                             width={160}
@@ -210,7 +211,7 @@ export default function HomePage() {
             <ScrollReveal className="reveal" delay={100} style={{ gridColumn: '1 / -1' }}>
               <div className={`${styles.features__card} ${styles['features__card--wide']}`}>
                 <div className={styles['features__card-image']}>
-                  <Image src="/emeags/images/award.jpg" alt="Karnataka State Urban Mobility Grand Challenge Winner" fill style={{ objectFit: 'contain', background: '#fff' }} sizes="(max-width: 768px) 100vw, 50vw" />
+                  <Image src={prefixPath('/images/award.jpg')} alt="Karnataka State Urban Mobility Grand Challenge Winner" fill style={{ objectFit: 'contain', background: '#fff' }} sizes="(max-width: 768px) 100vw, 50vw" />
                 </div>
                 <div className={styles['features__card-content']}>
                   <div className={styles['features__card-icon-badge']}>
@@ -374,7 +375,7 @@ export default function HomePage() {
               </div>
               <div className={styles.projects__content}>
                 <div className={styles.projects__image}>
-                  <Image src="/emeags/images/factory.png" alt="Project showcase" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 50vw" />
+                  <Image src={prefixPath('/images/factory.png')} alt="Project showcase" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 50vw" />
                 </div>
                 <div className={styles.projects__info}>
                   <div className={styles.projects__number}>{activeProjectData.num}</div>

@@ -1,4 +1,4 @@
-export const basePath = '/emeags';
+export const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 export const prefixPath = (path) => {
   if (path.startsWith('http')) return path;

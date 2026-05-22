@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { ChevronDown } from 'lucide-react';
+import { prefixPath } from '@/lib/utils';
 import styles from './Navbar.module.css';
 
 const serviceDropdown = [
@@ -43,7 +44,7 @@ export default function Navbar() {
         <div className={styles.navbar__inner}>
           {/* Logo */}
           <Link href="/" className={styles.navbar__logo}>
-            <img src="/emeags/logo.png" alt="EMEA Global Logo" className={styles['navbar__logo-image']} />
+            <img src={prefixPath('/logo.png')} alt="EMEA Global Logo" className={styles['navbar__logo-image']} />
             <div className={styles['navbar__logo-text']}>
               <span>EMEA Global</span>
               <span>Engineering & Industrial Services</span>

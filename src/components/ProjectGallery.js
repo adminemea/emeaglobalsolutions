@@ -2,9 +2,10 @@
 import { useState, useEffect, useCallback } from 'react';
 import { createPortal } from 'react-dom';
 import Image from 'next/image';
+import { basePath } from '@/lib/utils';
 import styles from './ProjectGallery.module.css';
 
-const BASE_PATH = '/emeags';
+const BASE_PATH = basePath;
 
 export default function ProjectGallery({ images = [], accentColor = '#2E6FBF' }) {
   const [lightboxIndex, setLightboxIndex] = useState(null);

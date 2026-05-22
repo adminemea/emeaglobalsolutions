@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import { prefixPath } from '@/lib/utils';
 import styles from './Footer.module.css';
 
 export default function Footer() {
@@ -9,7 +10,7 @@ export default function Footer() {
         {/* Brand Column */}
         <div className={styles.footer__brand}>
           <div className={styles.footer__logo}>
-            <img src="/emeags/logo.png" alt="EMEA Global Logo" className={styles['footer__logo-image']} />
+            <img src={prefixPath('/logo.png')} alt="EMEA Global Logo" className={styles['footer__logo-image']} />
             <div className={styles['footer__logo-text']}>
               <span>EMEA Global</span>
               <span>Engineering & Industrial Services</span>
