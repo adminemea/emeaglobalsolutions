@@ -279,13 +279,6 @@ export const divisions = [
         gallery: [
           '/images/projects/cad_migration_showcase.png',
           '/images/projects/cad_library_standardization.png',
-          '/images/projects/image44.png',
-          '/images/projects/image39.png',
-          '/images/projects/image43.png',
-          '/images/projects/image42.jpeg',
-          '/images/projects/image41.jpg',
-          '/images/projects/image40.png',
-          '/images/projects/image45.png',
         ],
         title: 'CAD Migration & Engineering Data Standardization Services',
         tagline: 'Secure CAD Platform Transition with Data Integrity Assurance',
