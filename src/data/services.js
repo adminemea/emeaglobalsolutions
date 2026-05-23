@@ -277,6 +277,8 @@ export const divisions = [
       {
         slug: 'cad-migration-standardization',
         gallery: [
+          '/images/projects/cad_migration_showcase.png',
+          '/images/projects/cad_library_standardization.png',
           '/images/projects/image44.png',
           '/images/projects/image39.png',
           '/images/projects/image43.png',
