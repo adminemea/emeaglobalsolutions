@@ -123,7 +123,7 @@ export default function AboutPage() {
         </div>
       </section>
 */}
-      {/* Team */}
+      {/* Team 
       <section className="section section--gray">
         <div className="container">
           <ScrollReveal className="reveal text-center">
@@ -147,7 +147,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
+*/}
       {/* CTA */}
       <section className="section section--dark" style={{ textAlign: 'center', padding: '5rem 0' }}>
         <div className="container">

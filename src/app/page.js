@@ -93,7 +93,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ═══ QUOTE ═══ */}
+      {/* ═══ QUOTE ═══ 
       <section className={styles.quote}>
         <div className="container">
           <ScrollReveal className="reveal">
@@ -119,7 +119,7 @@ export default function HomePage() {
           </ScrollReveal>
         </div>
       </section>
-
+*/}
       {/* ═══ BENEFITS ═══ */}
       <section className={styles.benefits} id="benefits">
         <div className="container">
